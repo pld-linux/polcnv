@@ -1,13 +1,14 @@
 Summary:	Small program to change text encoding (eg CP852 to ISO8859-2)
-Summary(pl):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2) 
+Summary(pl):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2)
 Name:		polcnv
 Version:	2.2
 Release:	1
 License:	GPL
 Vendor:		J.Sobczyk@ia.pw.edu.pl
-Group:		Utilities/Text
+Group:		Applications/Text
+Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
-Group(pl):	Narzêdzia/Tekst
+Group(pl):	Aplikacje/Tekst
 Source0:	%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,7 +22,7 @@ Polcnv konwertuje ogonki w plikach tekstowych.
 %setup -q -n %{name}.%{version}
 
 %build
-CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS"
+CXXFLAGS="%{rpmcflags}" CFLAGS="%{rpmcflags}" \
 %{__make}
 
 %install

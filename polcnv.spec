@@ -4,7 +4,7 @@ Name:		polcnv
 Version:	2.2
 Release:	2
 License:	GPL
-Vendor:		J.Sobczyk@ia.pw.edu.pl
+Vendor:		Jerzy Sobczyk <J.Sobczyk@ia.pw.edu.pl>
 Group:		Applications/Text
 Source0:	%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

@@ -6,9 +6,6 @@ Release:	1
 License:	GPL
 Vendor:		J.Sobczyk@ia.pw.edu.pl
 Group:		Applications/Text
-Group(de):	Applikationen/Text
-Group(fr):	Utilitaires/Texte
-Group(pl):	Aplikacje/Tekst
 Source0:	%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

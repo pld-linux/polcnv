@@ -3,11 +3,12 @@ Summary(pl):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2)
 Name:		polcnv
 Version:	2.2
 Release:	1
-Copyright:	GPL
+License:	GPL
 Vendor:		J.Sobczyk@ia.pw.edu.pl
 Group:		Utilities/Text
+Group(fr):	Utilitaires/Texte
 Group(pl):	Narzêdzia/Tekst
-Source:		%{name}.%{version}.tar.gz
+Source0:	%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

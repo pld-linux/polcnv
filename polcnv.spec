@@ -9,6 +9,7 @@ Group:		Applications/Text
 Source0:	%{name}.%{version}.tar.gz
 # Source0-md5:	de9658abecb1ec7c92af22f89ed97b83
 Patch0:		%{name}-fixes.patch
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

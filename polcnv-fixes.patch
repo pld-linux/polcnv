@@ -1,0 +1,11 @@
+--- polcnv.2.2/hex.C.orig	1998-12-05 18:50:38.000000000 +0100
++++ polcnv.2.2/hex.C	2004-04-05 21:31:30.500158160 +0200
+@@ -6,6 +6,8 @@
+ /*********************************************************************/
+ #include <stdio.h>
+ #include <ctype.h>
++#include <stdlib.h>
++#include <string.h>
+ #include "polcnv.h"
+ 
+ long int hex_hits  = 0;

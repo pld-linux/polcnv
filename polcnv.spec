@@ -1,26 +1,22 @@
-Summary: Small program to change text encoding (eg CP852 to ISO8859-2)
-Summary(pl): Programik do konwersji ogonków (np. CP852 do ISO-8859-2) 
-Name: polcnv
-Version: 2.2
-Release: 1
-Copyright: GPL
-Group: Utilities/Text
-Group(pl): Narzêdzia/Tekst
-Source: %{name}.%{version}.tar.gz
-#URL: 
-#Requires: 
-BuildRoot: /tmp/%{name}-%{version}-root
+Summary:	Small program to change text encoding (eg CP852 to ISO8859-2)
+Summary(pl):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2) 
+Name:		polcnv
+Version:	2.2
+Release:	1
+Copyright:	GPL
+Vendor:		J.Sobczyk@ia.pw.edu.pl
+Group:		Utilities/Text
+Group(pl):	Narzêdzia/Tekst
+Source:		%{name}.%{version}.tar.gz
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-Polcnv converts polish letters
+Polcnv converts polish letters.
 
 %description -l pl
-Polcnv konwertuje ogonki w plikach tekstowych
-
-%changelog
+Polcnv konwertuje ogonki w plikach tekstowych.
 
 %prep
-
 %setup -q -n %{name}.%{version}
 
 %build
@@ -29,12 +25,17 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
 install -d $RPM_BUILD_ROOT/usr/bin
-install CZYTAJ.TO Copyright DISCLAIMER READ.ME $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
 install %{name} $RPM_BUILD_ROOT/usr/bin
 
+gzip -9nf CZYTAJ.TO Copyright DISCLAIMER READ.ME
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
-%defattr(644, root, root, 755)
-%attr(755, root, root) /usr/bin/%{name}
-%doc CZYTAJ.TO Copyright DISCLAIMER READ.ME 
+%defattr(644,root,root,755)
+%doc *gz
+%attr(755,root,root) /usr/bin/%{name}
+
+%changelog

@@ -8,7 +8,7 @@ Vendor:		J.Sobczyk@ia.pw.edu.pl
 Group:		Utilities/Text
 Group(pl):	Narzêdzia/Tekst
 Source:		%{name}.%{version}.tar.gz
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Polcnv converts polish letters.

@@ -2,7 +2,7 @@ Summary:	Small program to change text encoding (eg CP852 to ISO8859-2)
 Summary(pl):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2)
 Name:		polcnv
 Version:	2.2
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		J.Sobczyk@ia.pw.edu.pl
 Group:		Applications/Text
@@ -27,12 +27,10 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf CZYTAJ.TO Copyright DISCLAIMER READ.ME
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *gz
+%doc CZYTAJ.TO Copyright DISCLAIMER READ.ME
 %attr(755,root,root) %{_bindir}/%{name}

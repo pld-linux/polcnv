@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Jerzy Sobczyk <J.Sobczyk@ia.pw.edu.pl>
 Group:		Applications/Text
 Source0:	%{name}.%{version}.tar.gz
+# Source0-md5:	de9658abecb1ec7c92af22f89ed97b83
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

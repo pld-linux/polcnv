@@ -22,7 +22,7 @@ Polcnv konwertuje ogonki w plikach tekstowych.
 
 %build
 CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS"
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

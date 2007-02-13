@@ -1,5 +1,5 @@
 Summary:	Small program to change text encoding (eg CP852 to ISO8859-2)
-Summary(pl.UTF-8):   Programik do konwersji ogonków (np. CP852 do ISO-8859-2)
+Summary(pl.UTF-8):	Programik do konwersji ogonków (np. CP852 do ISO-8859-2)
 Name:		polcnv
 Version:	2.2
 Release:	3

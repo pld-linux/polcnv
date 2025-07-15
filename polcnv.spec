@@ -20,7 +20,7 @@ Polcnv konwertuje ogonki w plikach tekstowych.
 
 %prep
 %setup -q -n %{name}.%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
